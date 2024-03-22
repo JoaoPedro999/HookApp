@@ -19,15 +19,15 @@ export default function App() {
 
   useEffect(() => {
     if (name.length === 30) {
-      alert("Aviso", "O nome atingiu 10 caracteres de comprimento!");
+      alert("Aviso", "O nome atingiu 130 caracteres de comprimento!");
     }
   }, [name]);
 
   return (
     <View style={styles.container}>
-      <Text>Contador: {count}</Text>
+      {/*       <Text>Contador: {count}</Text>
       <Button title="Increment" onPress={incrementCount} />
-      <Button title="Decrement" onPress={decrementCount} />
+      <Button title="Decrement" onPress={decrementCount} /> */}
       <TextInput
         placeholder="Digite seu nome"
         style={{
