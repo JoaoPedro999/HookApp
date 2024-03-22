@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Text, View, StyleSheet, Button, TextInput, Modal } from "react-native";
+import { Text, View, StyleSheet, Button, TextInput } from "react-native";
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -13,13 +13,13 @@ export default function App() {
     setCount(count - 1);
   };
 
-  const changeTxt = (name) => {
-    setName(`Olá ${name}, bom dia. Tudo bom?`);
+  const changeTxt = (txt) => {
+    setName(`Olá ${txt}, bom dia. Tudo bom?`);
   };
 
   useEffect(() => {
-    if (name.length === 10) {
-      window.alert("A string atingiu 10 caracteres de comprimento!");
+    if (name.length === 30) {
+      alert("Aviso", "O nome atingiu 10 caracteres de comprimento!");
     }
   }, [name]);
 
